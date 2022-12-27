@@ -33,7 +33,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build Pages
-        run: yarn build
+        run: yarn install && yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
