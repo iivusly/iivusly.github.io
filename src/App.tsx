@@ -1,5 +1,3 @@
-import React from 'react'
-import { VscGithub } from 'react-icons/vsc'
 import styled from 'styled-components'
 
 const Main = styled.div`
@@ -11,34 +9,6 @@ const Main = styled.div`
 	align-items: center;
 	justify-content: center;
 	color: white;
-`
-
-const Header = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4rem;
-
-  // Styling
-  background: rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1rem 2rem 0 rgba(38, 38, 38, 0.25);
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-  display: flex;
-  align-items: center;
-  padding: 0.25rem;
-`
-
-const Link = styled.a`
-  transition: top 0.5s;
-  position: relative;
-  color: white;
-  :hover {
-    top: -0.05rem;
-  }
 `
 
 const GlassButton = styled.button`
