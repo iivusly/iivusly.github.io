@@ -16,7 +16,7 @@
   let element: HTMLDivElement
   export let runOnce: boolean = true
   export let transitionFn: TransitionFn = fly
-  export let params: any = { y: '100%' }
+  export let params: any = transitionFn === fly ? { y: '100%' } : {}
 
   function check([entry]: IntersectionObserverEntry[], observer) {
     if (entry.isIntersecting) {
