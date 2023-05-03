@@ -5,18 +5,18 @@
 </script>
 
 <Section>
-    <div class="bottom blob">
-        <Blob growth="8"/>
-    </div>
+  <div class="bottom blob">
+    <Blob growth="8" />
+  </div>
 
-    <div class="top blob">
-        <Blob growth="8"/>
-    </div>
+  <div class="top blob">
+    <Blob growth="8" />
+  </div>
 
-    <InView>
-        <h1>Hello I'm <i><b>iivusly</b></i></h1>
-        <p>Fullstack developer and Rust enthusiast</p>
-    </InView>
+  <InView>
+    <h1>Hello I'm <i><b>iivusly</b></i></h1>
+    <p>Fullstack developer and Rust enthusiast</p>
+  </InView>
 </Section>
 
 <style lang="scss">
