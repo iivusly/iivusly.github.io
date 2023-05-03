@@ -1,23 +1,23 @@
 <script lang="ts">
-    import blobshape from 'blobshape'
+  import blobshape from 'blobshape'
 
-    interface $$Props extends Partial<SVGElement> {
-        size: number
-        edges: number
-        growth: number
-    }
+  interface $$Props extends Partial<SVGElement> {
+    size: number
+    edges: number
+    growth: number
+  }
 
-    export let size = 100
-    export let edges = 6
-    export let growth = 6
+  export let size = 100
+  export let edges = 6
+  export let growth = 6
 
-    let {path} = blobshape({size, edges, growth})
+  let { path } = blobshape({ size, edges, growth })
 
-    console.info(typeof Parameters<typeof blobshape>)
+  console.info(typeof Parameters<typeof blobshape>)
 </script>
 
 <svg {...$$restProps} preserveAspectRatio="none" viewBox="0 0 {size} {size}">
-    <path d={path}/>
+  <path d={path} />
 </svg>
 
 <style lang="scss">

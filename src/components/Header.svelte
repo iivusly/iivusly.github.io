@@ -1,16 +1,14 @@
 <script lang="ts">
-    import type {HTMLBaseAttributes} from 'svelte/elements'
+  import type { HTMLBaseAttributes } from 'svelte/elements'
 
-    interface $$Props extends HTMLBaseAttributes {
-    }
+  interface $$Props extends HTMLBaseAttributes {}
 </script>
 
 <nav {...$$restProps}>
-    <slot/>
+  <slot />
 </nav>
 
 <style lang="scss">
-
   nav {
     top: 0;
     padding: 1vh;

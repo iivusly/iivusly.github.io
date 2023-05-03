@@ -1,19 +1,19 @@
 <script>
-    import Section from '../components/Section.svelte'
-    import Blob from "../components/Blob.svelte";
+  import Section from '../components/Section.svelte'
+  import Blob from '../components/Blob.svelte'
 </script>
 
 <Section>
-    <div class="bottom">
-        <Blob growth="8"/>
-    </div>
+  <div class="bottom">
+    <Blob growth="8" />
+  </div>
 
-    <div class="top">
-        <Blob growth="8"/>
-    </div>
+  <div class="top">
+    <Blob growth="8" />
+  </div>
 
-    <h1>Hello I'm <i><b>iivusly</b></i></h1>
-    <p>Fullstack developer and Rust enthusiast</p>
+  <h1>Hello I'm <i><b>iivusly</b></i></h1>
+  <p>Fullstack developer and Rust enthusiast</p>
 </Section>
 
 <style lang="scss">

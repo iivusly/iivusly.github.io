@@ -1,8 +1,8 @@
 <div class="badge">
-    {#each Array(10) as _, i}
-        <div class="bar"/>
-    {/each}
-    <h1>WIP</h1>
+  {#each Array(10) as _, i}
+    <div class="bar" />
+  {/each}
+  <h1>WIP</h1>
 </div>
 
 <style lang="scss">
@@ -13,7 +13,6 @@
     color: olive;
   }
 
-
   .badge {
     position: absolute;
 
@@ -22,7 +21,6 @@
     background: darken(yellow, 5%);
     width: 125px;
     height: 25px;
-
 
     top: 20px;
     right: -30px;

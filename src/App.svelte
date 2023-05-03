@@ -1,17 +1,17 @@
 <script lang="ts">
-    import Hero from './sections/Hero.svelte'
-    import TopBar from './sections/TopBar.svelte'
-    import WIP from "./sections/WIP.svelte";
+  import Hero from './sections/Hero.svelte'
+  import TopBar from './sections/TopBar.svelte'
+  import WIP from './sections/WIP.svelte'
 </script>
 
 <main>
-    <Hero/>
-    <div class="last-section">
-        <WIP/>
-    </div>
+  <Hero />
+  <div class="last-section">
+    <WIP />
+  </div>
 </main>
 
-<TopBar/>
+<TopBar />
 
 <style lang="scss">
   main {
