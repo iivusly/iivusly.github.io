@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Hero from './sections/Hero.svelte'
-  import TopBar from './sections/TopBar.svelte'
-  import WIP from './sections/WIP.svelte'
+  import Hero from './articles/Hero.svelte'
+  import TopBar from './articles/TopBar.svelte'
+  import WIP from './articles/WIP.svelte'
 </script>
 
 <main>
