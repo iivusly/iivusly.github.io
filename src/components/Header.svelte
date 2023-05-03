@@ -15,7 +15,7 @@
     top: 0;
     padding: 1vh;
     height: 4vh;
-    width: calc(100vw - 2vh);
+    width: calc(100% - 2vh);
     display: flex;
     position: fixed;
     align-items: center;
