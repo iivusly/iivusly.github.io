@@ -2,16 +2,19 @@
   import Section from '../components/Section.svelte'
   import Blob from '../components/Blob.svelte'
   import InView from '../components/InView.svelte'
+  import { fade } from 'svelte/transition'
 </script>
 
 <Section>
-  <div class="bottom blob">
-    <Blob growth="8" />
-  </div>
+  <InView transitionFn={fade}>
+    <div class="bottom blob">
+      <Blob growth="8" />
+    </div>
 
-  <div class="top blob">
-    <Blob growth="8" />
-  </div>
+    <div class="top blob">
+      <Blob growth="8" />
+    </div>
+  </InView>
 
   <InView>
     <h1>Hello I'm <i><b>iivusly</b></i></h1>
