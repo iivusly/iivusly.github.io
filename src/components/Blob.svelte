@@ -12,8 +12,6 @@
   export let growth = 6
 
   let { path } = blobshape({ size, edges, growth })
-
-  console.info(typeof Parameters<typeof blobshape>)
 </script>
 
 <svg {...$$restProps} preserveAspectRatio="none" viewBox="0 0 {size} {size}">
