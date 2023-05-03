@@ -1,38 +1,20 @@
-<div class="badge">
-  {#each Array(10) as _, i}
-    <div class="bar" />
-  {/each}
-  <h1>WIP</h1>
-</div>
+<div>WIP</div>
 
 <style lang="scss">
-  h1 {
+  div {
     position: absolute;
-    padding: 0;
-    margin: 0;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+
+    font-weight: bold;
+
     color: olive;
-  }
+    background: repeating-linear-gradient(45deg, darken(yellow, 5%), darken(yellow, 5%) 10px, darken(yellow, 10%) 10px, darken(yellow, 10%) 20px);
 
-  .badge {
-    position: absolute;
-
-    rotate: 45deg;
-
-    background: darken(yellow, 5%);
-    width: 125px;
-    height: 25px;
-
-    top: 20px;
-    right: -30px;
-
-    overflow: hidden;
-
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .bar {
-    background: darken(yellow, 10%);
-    width: 5px;
+    transform-origin: center center;
+    transform: rotate(-45deg) translate(-65px, -45px);
   }
 </style>
