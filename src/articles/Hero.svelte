@@ -18,7 +18,7 @@
 
   <InView>
     <h1>Hello I'm <i><b>iivusly</b></i></h1>
-    <p>Fullstack developer and Rust enthusiast</p>
+    <p>Fullstack developer, in love with Rust and Swift 🥰</p>
   </InView>
 </Section>
 
