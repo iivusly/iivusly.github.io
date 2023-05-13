@@ -14,6 +14,7 @@
   let { path } = blobshape({ size, edges, growth })
 </script>
 
+<!-- TODO: Fix blob sizes on mobile -->
 <svg {...$$restProps} preserveAspectRatio="none" viewBox="0 0 {size} {size}">
   <path d={path} />
 </svg>
