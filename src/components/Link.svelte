@@ -1,10 +1,14 @@
 <script lang="ts">
   import type { HTMLAnchorAttributes } from 'svelte/elements'
 
-  interface $$Props extends HTMLAnchorAttributes {}
+  interface $$Props extends Partial<HTMLAnchorAttributes> {
+    newTab?: boolean
+  }
+
+  export let newTab = false
 </script>
 
-<a {...$$restProps}>
+<a {...$$restProps} target={newTab ? '_blank' : undefined}>
   <slot />
 </a>
 
