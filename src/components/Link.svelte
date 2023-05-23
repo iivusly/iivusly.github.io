@@ -1,23 +1,25 @@
 <script lang="ts">
-  import type { HTMLAnchorAttributes } from 'svelte/elements'
+    import type {HTMLAnchorAttributes} from 'svelte/elements'
 
-  interface $$Props extends Partial<HTMLAnchorAttributes> {
-    newTab?: boolean
-    href?: string
-  }
+    interface $$Props extends Partial<HTMLAnchorAttributes> {
+        newTab?: boolean
+        href?: string
+        decoration?: boolean
+    }
 
-  export let newTab = false
-  export let href = '#'
+    export let newTab = false
+    export let href = '#'
+    export let decoration = true
 </script>
 
-<a {...$$restProps} {href} target={newTab ? '_blank' : undefined}>
-  <slot />
+<a {...$$restProps} {href} style={decoration ? 'underlined' : 'text-decoration: none;'}
+   target={newTab ? '_blank' : undefined}>
+    <slot/>
 </a>
 
 <style lang="scss">
   a {
     color: #fff;
-    text-decoration: none;
 
     transition: filter 0.2s ease-in-out;
 
