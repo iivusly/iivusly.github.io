@@ -3,12 +3,14 @@
 
   interface $$Props extends Partial<HTMLAnchorAttributes> {
     newTab?: boolean
+    href?: string
   }
 
   export let newTab = false
+  export let href = '#'
 </script>
 
-<a {...$$restProps} target={newTab ? '_blank' : undefined}>
+<a {...$$restProps} {href} target={newTab ? '_blank' : undefined}>
   <slot />
 </a>
 
