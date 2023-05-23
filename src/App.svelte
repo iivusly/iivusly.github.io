@@ -2,10 +2,12 @@
   import Hero from './articles/Hero.svelte'
   import TopBar from './articles/TopBar.svelte'
   import WIP from './articles/WIP.svelte'
+  import Tools from './articles/Tools.svelte'
 </script>
 
 <main>
   <Hero />
+  <Tools />
   <WIP />
 </main>
 
