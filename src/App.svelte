@@ -6,9 +6,7 @@
 
 <main>
   <Hero />
-  <div class="last-section">
-    <WIP />
-  </div>
+  <WIP />
 </main>
 
 <TopBar />
@@ -23,10 +21,9 @@
 
     background: black;
     color: white;
-  }
 
-  .last-section {
-    width: 100%;
-    height: calc(100vh - (4vh + 2vh));
+    & > :global(:last-child) {
+      height: calc(100vh - (4vh + 2vh));
+    }
   }
 </style>
