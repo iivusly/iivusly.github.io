@@ -50,9 +50,6 @@
     "*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write"
-    ],
-    "!(*.css|*.ts|*.tsx)": [
-      "prettier --write"
     ]
   }
 }
