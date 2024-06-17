@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import 'github-markdown-css';
 import StyledComponentsRegistry from "@lib/registry";
 
 const inter = Inter({ subsets: ["latin"] });
