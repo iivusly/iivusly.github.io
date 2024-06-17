@@ -1,10 +1,10 @@
 body {
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
