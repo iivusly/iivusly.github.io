@@ -1,7 +1,10 @@
 {
   "name": "iivusly.github.io",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "configuration": {
+    "discordID": "1041597787407663134"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,19 +12,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@next/mdx": "^14.2.4",
+    "gh-pages": "^6.1.1",
+    "github-markdown-css": "^5.5.1",
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.3",
+    "next-mdx-remote": "^5.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "react-markdown": "^9.0.1",
+    "styled-components": "^6.1.11",
+    "use-lanyard": "^1.5.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "typescript": "^5"
   }
 }
