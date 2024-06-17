@@ -31,7 +31,7 @@ export default async function Page() {
 		<Main>
 			<PFP src={'https://github.com/iivusly.png'} />
 			<h1>Hello</h1>
-			<div className="markdown-body">
+			<div className={'markdown-body'}>
 				<Markdown>{README}</Markdown>
 			</div>
 		</Main>
