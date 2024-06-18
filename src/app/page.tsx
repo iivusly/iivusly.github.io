@@ -1,24 +1,6 @@
-'use client'
-
-import Markdown from 'react-markdown'
-import styled from 'styled-components'
-
-const Main = styled.main`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background-color: red;
-	border-radius: 1rem;
-	margin: 2.5% 10%;
-	padding: 1rem;
-`
-
-const PFP = styled.img`
-	border-radius: 50%;
-	width: 5rem;
-	height: 5rem;
-`
+import Main from '@components/main'
+import { PostBody } from '@components/mdx/postBody'
+import PFP from '@components/pfp'
 
 export default async function Page() {
 	const README = await (
@@ -30,10 +12,7 @@ export default async function Page() {
 	return (
 		<Main>
 			<PFP src={'https://github.com/iivusly.png'} />
-			<h1>Hello</h1>
-			<div className={'markdown-body'}>
-				<Markdown>{README}</Markdown>
-			</div>
+			<PostBody>{README}</PostBody>
 		</Main>
 	)
 }
