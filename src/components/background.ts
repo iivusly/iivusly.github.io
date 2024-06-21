@@ -4,7 +4,8 @@ import { createGlobalStyle } from 'styled-components'
 
 const Background = createGlobalStyle`
 	body {
-        background-size: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url('/Day.jpg');
     }
 `
