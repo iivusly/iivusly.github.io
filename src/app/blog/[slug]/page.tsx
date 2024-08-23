@@ -1,4 +1,4 @@
-import { PostBody } from '@components/mdx/postBody'
+import { PostBody } from '@lib/components/mdx/postBody'
 import { getPost, getPosts } from '@lib/get-posts'
 import { notFound } from 'next/navigation'
 

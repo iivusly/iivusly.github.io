@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import StyledComponentsRegistry from '@lib/registry'
-import WIPBadge from '@components/wipBadge'
+import WIPBadge from '@lib/components/wipBadge'
 
 const inter = Inter({ subsets: ['latin'] })
 

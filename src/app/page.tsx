@@ -1,7 +1,7 @@
-import Background from '@components/background'
-import Main from '@components/main'
-import { PostBody } from '@components/mdx/postBody'
-import PFP from '@components/pfp'
+import Background from '@lib/components/background'
+import Main from '@lib/components/main'
+import { PostBody } from '@lib/components/mdx/postBody'
+import PFP from '@lib/components/pfp'
 
 export default async function AppPage() {
 	const README = await (
