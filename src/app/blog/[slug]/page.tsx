@@ -7,7 +7,11 @@ export async function generateStaticParams() {
 	return posts.map((post) => ({ slug: post.slug }))
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function BlogPage({
+	params,
+}: {
+	params: { slug: string }
+}) {
 	const post = await getPost(params.slug)
 
 	if (!post) {

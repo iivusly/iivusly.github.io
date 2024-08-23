@@ -3,7 +3,7 @@ import Main from '@components/main'
 import { PostBody } from '@components/mdx/postBody'
 import PFP from '@components/pfp'
 
-export default async function Page() {
+export default async function AppPage() {
 	const README = await (
 		await fetch(
 			'https://raw.githubusercontent.com/iivusly/iivusly/main/README.md'
