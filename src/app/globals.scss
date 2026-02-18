@@ -1,0 +1,6 @@
+@use "../lib/gruvbox.scss";
+
+body {
+  background-color: gruvbox.$gb-dm-bg0;
+  color: gruvbox.$gb-dm-fg0;
+}
