@@ -2,6 +2,9 @@ import createMDX from "@next/mdx";
 import { execSync } from "node:child_process";
 
 const gitHash = execSync("git rev-parse HEAD").toString().trim();
+const commitYear = execSync("git log -1 --format=%ad --date=format:%Y")
+  .toString()
+  .trim();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -17,6 +20,7 @@ const nextConfig = {
   },
   env: {
     GIT_HASH: gitHash,
+    COMMIT_YEAR: commitYear,
   },
 };
 

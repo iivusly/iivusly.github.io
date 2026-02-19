@@ -7,8 +7,11 @@ const FooterContainer = styled.footer`
   position: relative;
 
   height: 5rem;
-  margin: 0;
-  padding: 0;
+  margin: 2rem calc(0px - (50vw - 50%)) -2rem;
+  padding: 2rem 1.5rem;
+
+  background-color: ${(props) => props.theme.background.soft};
+  color: ${(props) => props.theme.foreground.faded};
 
   &:after {
     content: "";
@@ -17,6 +20,7 @@ const FooterContainer = styled.footer`
     left: 0;
     right: 0;
     height: 2px;
+    z-index: 1;
     background-color: ${(props) => props.theme.foreground.faded};
   }
 `;
@@ -25,7 +29,7 @@ export default function Footer() {
   return (
     <FooterContainer>
       <p>
-        &#xA9; iivusly -{" "}
+        &#xA9; {process.env.COMMIT_YEAR} iivusly -{" "}
         <Link
           href={`https://github.com/iivusly/iivusly.github.io/commit/${process.env.GIT_HASH}`}
         >
