@@ -1,4 +1,7 @@
 import createMDX from "@next/mdx";
+import { execSync } from "node:child_process";
+
+const gitHash = execSync("git rev-parse HEAD").toString().trim();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,6 +14,9 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   compiler: {
     styledComponents: true,
+  },
+  env: {
+    GIT_HASH: gitHash,
   },
 };
 
