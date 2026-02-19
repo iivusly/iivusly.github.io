@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
-import "./globals.scss";
 import { Iosevka } from "@lib/fonts";
+import StyledComponentsRegistry from "@/lib/registry";
+import ThemeClientWrapper from "@/lib/theme";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={"en"}>
-      <body className={Iosevka.className}>{children}</body>
+      <body className={Iosevka.className}>
+        <StyledComponentsRegistry>
+          <ThemeClientWrapper>{children}</ThemeClientWrapper>
+        </StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
