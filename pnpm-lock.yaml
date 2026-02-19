@@ -74,9 +74,6 @@ importers:
       prettier:
         specifier: 3.6.2
         version: 3.6.2
-      sass:
-        specifier: ^1.97.3
-        version: 1.97.3
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -5247,6 +5244,7 @@ snapshots:
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.1.2
+    optional: true
 
   cli-cursor@5.0.0:
     dependencies:
@@ -5999,7 +5997,8 @@ snapshots:
 
   ignore@7.0.5: {}
 
-  immutable@5.1.4: {}
+  immutable@5.1.4:
+    optional: true
 
   import-fresh@3.3.1:
     dependencies:
@@ -6796,7 +6795,8 @@ snapshots:
 
   react@19.2.4: {}
 
-  readdirp@4.1.2: {}
+  readdirp@4.1.2:
+    optional: true
 
   recma-build-jsx@1.0.0:
     dependencies:
@@ -6937,6 +6937,7 @@ snapshots:
       source-map-js: 1.2.1
     optionalDependencies:
       "@parcel/watcher": 2.5.6
+    optional: true
 
   scheduler@0.27.0: {}
 
