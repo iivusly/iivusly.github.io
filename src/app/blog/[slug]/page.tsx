@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-import Head from "next/head";
+import { Metadata } from "next";
 import path from "path";
 
 const POST_DIR = "src/blog";
@@ -15,6 +15,18 @@ export async function generateStaticParams() {
   return posts;
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const { metadata } = await import(`@/blog/${slug}.mdx`);
+  return {
+    title: `iivusly's blog: ${metadata.title}`,
+  };
+}
+
 export default async function BlogPage({
   params,
 }: {
@@ -22,14 +34,10 @@ export default async function BlogPage({
 }) {
   const { slug } = await params;
 
-  const { default: Post, metadata } = await import(`@/blog/${slug}.mdx`);
+  const { default: Post } = await import(`@/blog/${slug}.mdx`);
 
   return (
     <>
-      <Head>
-        <title>{metadata.title}</title>
-      </Head>
-      <p>{metadata.title}</p>
       <Post />
     </>
   );
